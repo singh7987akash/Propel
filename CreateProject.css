@@ -1,0 +1,124 @@
+.create-project-page {
+    padding: var(--spacing-3xl) 0;
+    min-height: calc(100vh - 80px);
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.page-header .header-subtitle {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.guidance-card {
+    background: linear-gradient(135deg, rgba(255, 153, 51, 0.1), rgba(255, 102, 0, 0.05));
+    border: 2px solid var(--primary);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+    box-shadow: var(--shadow-md);
+}
+
+.guidance-card h3 {
+    color: var(--primary);
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.guidance-card p {
+    color: var(--text-primary);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.project-form {
+    background: var(--bg-secondary);
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+}
+
+.field-hint {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin-top: var(--spacing-xs);
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.required {
+    color: var(--error);
+    font-weight: 700;
+}
+
+.optional {
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.trust-reminder {
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(22, 163, 74, 0.05));
+    border: 2px solid var(--success);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.trust-reminder h4 {
+    color: var(--success);
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.trust-reminder ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.trust-reminder li {
+    color: var(--text-primary);
+    padding: var(--spacing-xs) 0;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .page-header .header-subtitle {
+        font-size: 1rem;
+    }
+
+    .project-form {
+        padding: var(--spacing-lg);
+    }
+
+    .guidance-card {
+        padding: var(--spacing-md);
+    }
+}
